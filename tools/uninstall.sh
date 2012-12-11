@@ -25,4 +25,9 @@ else
   source /etc/profile
 fi
 
+# removing git config files
+rm $ZSH/.gitignore
+rm $ZSH/.gitconfig
+
+
 echo "Thanks for trying out Oh My Zsh. It's been uninstalled."

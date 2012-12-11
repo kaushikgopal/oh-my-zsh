@@ -5,7 +5,7 @@ then
 fi
 
 echo "\033[0;34mCloning Oh My Zsh...\033[0m"
-hash git >/dev/null && /usr/bin/env git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh || {
+hash git >/dev/null && /usr/bin/env git clone https://github.com/kaushikgopal/oh-my-zsh.git ~/.oh-my-zsh || {
   echo "git not installed"
   exit
 }
@@ -36,3 +36,11 @@ echo "\033[0;32m"'                        /____/                       '"\033[0m
 echo "\n\n \033[0;32m....is now installed.\033[0m"
 /usr/bin/env zsh
 source ~/.zshrc
+
+# loading osx defaults
+source $ZSH/osx.zsh
+
+
+# sym linking the .gitignore file
+ln -s $ZSH/.gitignore ~/.gitignore
+ln -s $ZSH/.gitconfig ~/.gitconfig
