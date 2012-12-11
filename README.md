@@ -49,11 +49,11 @@ You _might_ need to modify your PATH in ~/.zshrc if you're not able to find some
 ## Usage
 
 
-* enable the plugins you want in your ~/.zshrc@ (take a look at @plugins/@ to see what's possible)
-** example: @plugins=(git osx ruby)@
-* Theme support: Change the @ZSH_THEME@ environment variable in @~/.zshrc@.
+* enable the plugins you want in your ~/.zshrc (take a look at plugins/ to see what's possible)
+** example: plugins=(git osx ruby)
+* Theme support: Change the ZSH_THEME environment variable in ~/.zshrc.
 ** Take a look at the "current themes":https://wiki.github.com/robbyrussell/oh-my-zsh/themes that come bundled with _Oh My Zsh_.
-* much much more...  take a look at @lib/@ what _Oh My Zsh_ offers...
+* much much more...  take a look at lib/ what _Oh My Zsh_ offers...
 
 ## Useful
 
@@ -62,14 +62,14 @@ the "refcard":http://www.bash2zsh.com/zsh_refcard/refcard.pdf is pretty tasty fo
 
 ### Customization
 
-If you want to override any of the default behavior, just add a new file (ending in @.zsh@) into the @custom/@ directory.
-If you have many functions which go well together you can put them as a *.plugin.zsh file in the @custom/plugins/@ directory and then enable this plugin.
-If you would like to override the functionality of a plugin distributed with oh-my-zsh, create a plugin of the same name in the @custom/plugins/@ directory and it will be loaded instead of the one in @plugins/@.
+If you want to override any of the default behavior, just add a new file (ending in .zsh) into the custom/ directory.
+If you have many functions which go well together you can put them as a *.plugin.zsh file in the custom/plugins/ directory and then enable this plugin.
+If you would like to override the functionality of a plugin distributed with oh-my-zsh, create a plugin of the same name in the custom/plugins/ directory and it will be loaded instead of the one in plugins/.
 
 
 ### Uninstalling
 
-If you want to uninstall it, just run @uninstall_oh_my_zsh@ from the command line and it'll remove itself and revert you to bash (or your previous zsh config).
+If you want to uninstall it, just run uninstall_oh_my_zsh from the command line and it'll remove itself and revert you to bash (or your previous zsh config).
 
 ## Contributors
 
