@@ -15,3 +15,24 @@ function take() {
   cd $1
 }
 
+# courtesy: Clark's Tech Blog
+# Gets the selected files in the Finder.
+function selected()
+{
+    osascript -e 'tell application "finder"
+                 set tf to selection
+                 set tl to ""
+                 repeat with f in tf
+                    set tl to tl & "\"" & POSIX path of (f as alias) & "\" "
+                 end repeat
+               end tell'
+}
+# Change to the directory of the frontmost window in the Finder.
+function cdf() {
+    cd "$(osascript -e 'try
+        tell app "Finder" to (target of Finder window 1) as text
+            POSIX path of result
+        on error
+            (system attribute "HOME") & "/Desktop"
+        end')"
+}
