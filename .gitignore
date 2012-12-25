@@ -13,12 +13,13 @@ Thumbs.db
 # Files that might appear on external disks
 .extra
 
-# Sublime text project files
-*.sublime-project
+# Sublime text project files (you typically want your sublime-project to be versioned)
+# *.sublime-project
 *.sublime-workspace
 
 # ZSH shell files
 
+.zshrc
 local.zsh
 log/.zsh_history
 projects.zsh
