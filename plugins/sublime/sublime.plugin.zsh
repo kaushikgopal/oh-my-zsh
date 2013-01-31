@@ -18,4 +18,10 @@ elif  [[ $('uname') == 'Darwin' ]]; then
 		alias st='${_sublime_darwin_subl}'
 	fi
 fi
+
 alias stt='st .'
+
+# creating the link if it doesn't already exists, as some programs like git like a clean CLI of Sublime
+if [[ ! -a /usr/local/bin/sublime ]]; then
+  ln -i -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+fi
