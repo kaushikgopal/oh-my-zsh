@@ -38,9 +38,11 @@ echo "\n\n \033[0;32m....is now installed.\033[0m"
 /usr/bin/env zsh
 source ~/.zshrc
 
+# loading up .profile
+ln -s $ZSH/.profile ~/.profile
+
 # loading osx defaults
 source $ZSH/osx.zsh
-
 
 # sym linking the .gitignore file
 ln -s $ZSH/.gitignore ~/.gitignore
