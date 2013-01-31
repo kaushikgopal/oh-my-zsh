@@ -29,3 +29,5 @@ custom/*
 *.swp
 !custom/example.zshcache
 cache/
+
+.profile
