@@ -1,7 +1,8 @@
 # Sublime Text 2 Aliases
 #unamestr = 'uname'
 
-local _sublime_darwin_subl=/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
+local _sublime_darwin_subl=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
+# local _sublime_darwin_subl=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
 
 if [[ $('uname') == 'Linux' ]]; then
 	if [ -f '/usr/bin/sublime_text' ]; then
@@ -20,8 +21,10 @@ elif  [[ $('uname') == 'Darwin' ]]; then
 fi
 
 alias stt='st .'
+alias stn='st -n'
 
 # creating the link if it doesn't already exists, as some programs like git like a clean CLI of Sublime
 if [[ ! -a /usr/local/bin/sublime ]]; then
-  ln -i -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+  # ln -i -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+  ln -i -s ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
 fi

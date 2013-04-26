@@ -55,3 +55,17 @@ if [ $FOUND_RBENV -eq 0 ] ; then
   function gemsets() { echo 'not supported' }
   function rbenv_prompt_info() { echo "system: $(ruby -v | cut -f-2 -d ' ')" }
 fi
+
+
+
+# ## Install ###################################################################
+# brew install rbenv
+# brew install ruby-build
+
+# # Set default bundle path
+# mkdir -p ~/.bundle
+# printf -- "---\nBUNDLE_PATH: vendor/bundle" >> ~/.bundle/config
+
+# # Add autocompletion to IRB
+# touch ~/.irbrc
+# printf "require 'irb/completion'" >> ~/.irbrc

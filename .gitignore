@@ -17,6 +17,9 @@ Thumbs.db
 # *.sublime-project
 *.sublime-workspace
 
+# Rubymine project files
+.idea/*
+
 # ZSH shell files
 
 .zshrc
@@ -30,4 +33,5 @@ custom/*
 !custom/example.zshcache
 cache/
 
-.profile
+# rbenv installs
+vendor/bundle
